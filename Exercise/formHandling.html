@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormHandling</title>
+    <script>
+        function ageFunction(){
+            var x,text;
+            x= document.getElementById("age").value;
+            if(x<18){
+                alert("age is less than 18. You are not an adult");
+            }
+        }
+        function nameFunction(){
+            var y,text;
+            y=document.getElementById("name").value;
+            if(y==""){
+                alert("Please fill in Name");
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+        <label for="name">Name:</label>
+        <input name="name" id="name">
+        <br><br>
+        <label for="age">Age:</label>
+        <input name="age" id="age">
+        <br><br>
+        <button type="button" onclick="ageFunction(),nameFunction()">Send information</button>
+</body>
+
+</html>

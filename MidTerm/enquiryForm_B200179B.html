@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        label {
+            display: block;
+            clear: left;
+            float: left;
+            width: 40%;
+        }
+
+        input,
+        select {
+            display: block;
+            width: 50%;
+        }
+
+
+        fieldset.statusgroup label {
+            display: inline;
+            float: none;
+        }
+
+        fieldset.statusgroup input {
+            display: inline;
+            float: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="post" action="data.php">
+        <fieldset>
+            <legend>Enquiry Form</legend>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="write your name" />
+
+            <br />
+
+            <label for="numb">Contact Number(HP):</label>
+            <input type="text" name="contact number" id="numb" placeholder="write your contact number" />
+
+            <br />
+            <label for="add">Address:</label>
+            <textarea name="add" id="add" row="3" cols="50" placeholder="write your contact address"></textarea>
+            <br />
+            <br />
+
+            <label for="program">Program:</label>
+            <select size="1" name="program" id="program">
+
+                <option>Classical Ballet</option>
+                <option>Latin dance</option>
+                <option selected>Pop dance</option>
+            </select>
+            <br>
+            <label for="add">Any Question?:</label>
+            <textarea name="add" id="add" row="3" cols="50" placeholder="write down your quenstion here"></textarea>
+            <br>
+            <br>
+
+            <label>Please rate our teaching quality<br />
+                (0 =poor; 1=normal; 2 =great)</label>
+            <input name="service" id="service" type="range" value="1" min="0" max="2" step="1" />
+            <br>
+            <br>
+            <label>Please rate our facility quality<br />
+                (0 =poor; 1=normal; 2 =great)</label>
+            <input name="service" id="service" type="range" value="1" min="0" max="2" step="1" />
+
+            <br>
+            <br>
+            <label>Do you wish to receive promotion or newsletter in the future?</label>
+            <fieldset class="optionGroup">
+                <label for for="oYes">Yes</label>
+                <input type="radio" name="orderCorrect" id="oYes" value="yes" />
+
+                <label for for="oNo">No</label>
+                <input type="radio" name="orderCorrect" id="oNo" value="no" />
+            </fieldset>
+            <br />
+            <br>
+
+            <input type="submit" value="Submit">
+
+
+    </form>
+</body>
+
+</html>
