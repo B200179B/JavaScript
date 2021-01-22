@@ -20,6 +20,18 @@
                 alert("Please fill in Name");
             }
         }
+        function emailFunction(){
+            var z,text;
+            z=document.getElementById("email").value;
+            var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            if(z==""){
+                alert("Please fill in Email");
+            } else if (z.value.match(mailformat)){
+                
+            } else {
+                alert("This Email is unvalid")
+            }
+        }
     </script>
 </head>
 
@@ -31,7 +43,10 @@
         <label for="age">Age:</label>
         <input name="age" id="age">
         <br><br>
-        <button type="button" onclick="ageFunction(),nameFunction()">Send information</button>
+        <label for="email">Email</label>
+        <input type="email" id="email">
+        <br><br>
+        <button type="button" onclick="ageFunction(),nameFunction(),emailFuncyion()">Send information</button>
 </body>
 
 </html>
